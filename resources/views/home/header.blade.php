@@ -148,13 +148,13 @@ body {
                        
                         
                         <li class="nav-item">
-                           <a class="nav-link" href="home/product.html">Products</a>
+                           <a class="nav-link" href="#products">Products</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="home/contact.html">Blog</a>
+                           <a class="nav-link" href="#blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="home/checkout.html">Premium Products</a>
+                           <a class="nav-link" href="#introsection">Premium Products</a>
                         </li>
 
                         <li class="nav-item">
