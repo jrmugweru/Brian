@@ -48,7 +48,7 @@
         <!-- partial:partials/_navbar.html -->
         <div class="navbar-fixed">
             @include('admin.navbar')
-        </div>
+         </div>
         <!-- partial -->
         <div class="main-panel">
             <div class="content-wrapper">

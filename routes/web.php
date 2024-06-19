@@ -6,16 +6,17 @@ use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\AdminController;
 
-route::get('/',[HomeController::class,'index']);
+Route::get('/', [HomeController::class, 'index']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
+    'checkUserRole',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', [HomeController::class, 'redirect'])->name('dashboard');
 });
+
 route::get('/redirect',[HomeController::class,'redirect']);
 
 route::get('/view_category', [AdminController::class,'view_category']);

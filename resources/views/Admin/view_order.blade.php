@@ -40,7 +40,8 @@
       <!-- partial -->
       
         <!-- partial:partials/_navbar.html -->
-       @include('admin.navbar')
+    
+     @include('admin.navbar')
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">

@@ -19,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        \Illuminate\Support\Facades\Route::aliasMiddleware('checkUserRole', \App\Http\Middleware\CheckUserRole::class);
     }
+    
 }
